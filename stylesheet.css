@@ -18,6 +18,7 @@ a {
 .topnav {
     background-color: var(--two);
     overflow: hidden;
+    border-radius: 10%;
 }
 
 /* Style the links inside the navigation bar */
@@ -34,10 +35,12 @@ a {
 .topnav a:hover {
     background-color: var(--three);
     color: var(--five);
+    border-radius: 10%;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
     background-color: var(--five);
     color: var(--three);
+    border-radius: 10%;
 }
