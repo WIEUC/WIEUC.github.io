@@ -19,6 +19,7 @@ a {
     background-color: var(--two);
     overflow: hidden;
     border-radius: 15px;
+    text-align: center;
 }
 
 /* Style the links inside the navigation bar */
