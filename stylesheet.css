@@ -16,10 +16,11 @@ a {
 }
 
 .topnav {
+    width: 326.38px;
     background-color: var(--two);
     overflow: hidden;
     border-radius: 15px;
-    text-align: center;
+    margin: 0 auto;
 }
 
 /* Style the links inside the navigation bar */
