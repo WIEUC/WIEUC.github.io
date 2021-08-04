@@ -1,48 +1,40 @@
-:root {
-    --one: #FFFFFF;
-    --two: #D4DEFF;
-    --three: #A9BDFF;
-    --four: #7D9BFF;
-    --five: #527AFF;
+@keyframes topsel {
+    from {border-radius: 3px;}
+    to {border-radius: 20px;}
 }
 
-/* Add a black background color to the top navigation */
-body {
-    background-color: var(--one);
+@keyframes topdesel {
+    from {border-radius: 20px;}
+    to {border-radius: 3px;}
 }
 
-a {
-    font-family: novecento-sans;
-}
-
-.topnav {
-    width: 326.38px;
-    background-color: var(--two);
-    overflow: hidden;
-    border-radius: 15px;
-    margin: 0 auto;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: var(--four);
+.topbar {
     text-align: center;
-    padding: 14px 16px;
+}
+
+.topbar .indiv {
+    display: inline;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.topbar .indiv a {
+    display: inline-block;
+    color: white;
+    font-family: filson-pro;
     text-decoration: none;
-    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #307ae5;
+    border-radius: 20px;
+    width: 100px;
+    animation-name: topdesel;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: var(--three);
-    color: var(--five);
-    border-radius: 15px;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: var(--five);
-    color: var(--three);
-    border-radius: 15px;
+.topbar .indiv a:hover {
+    animation-name: topsel;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
